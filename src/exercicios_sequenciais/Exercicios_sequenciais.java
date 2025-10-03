@@ -12,7 +12,8 @@ public class Exercicios_sequenciais {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        CalcularMediaPonderada();
+//        CalcularMediaPonderada();
+        CalcularValorCofre();   
     }
     
     static void CalcularMediaPonderada() {
@@ -41,5 +42,25 @@ public class Exercicios_sequenciais {
         
         // saida
         System.out.println("A média ponderada é " + mediaPonderada);
+    }
+    
+    static void CalcularValorCofre() {
+        double qtdDolares = 0.0d;
+        double cotacaoDolar = 0.0d;
+        double valorReais = 0.0d;
+        
+        // entrada de dados
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Informe a quantidade do US$ no cofre: ");
+        qtdDolares = scanner.nextDouble();
+        System.out.print("Informe a cotação do US$ do dia: ");
+        cotacaoDolar = scanner.nextDouble();
+        
+        // processamento
+        valorReais = qtdDolares * cotacaoDolar;
+        
+        // saida de dados
+        System.out.println("O cofre guarda R$ " + valorReais);
+        
     }
 }
