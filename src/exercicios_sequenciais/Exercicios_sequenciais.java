@@ -13,7 +13,8 @@ public class Exercicios_sequenciais {
      */
     public static void main(String[] args) {
 //        CalcularMediaPonderada();
-        CalcularValorCofre();   
+//        CalcularValorCofre();   
+        ConverterCelsiusFahrenheit();
     }
     
     static void CalcularMediaPonderada() {
@@ -62,5 +63,21 @@ public class Exercicios_sequenciais {
         // saida de dados
         System.out.println("O cofre guarda R$ " + valorReais);
         
+    }
+    
+    static void ConverterCelsiusFahrenheit() {
+        double celsius, fahrenheit = 0.0d;
+        
+        // entrada de dados
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Informe a temperatura em graus Celsius: ");
+        celsius = scanner.nextDouble();
+        
+        // processamento
+        fahrenheit = (9 * celsius + 160) / 5;
+        
+        // saida de dados
+        System.out.println("A temperatura em Celsius....... " + celsius);
+        System.out.println("A temperatura em Fahreinheit... " + fahrenheit);
     }
 }
